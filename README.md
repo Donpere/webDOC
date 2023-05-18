@@ -1,6 +1,10 @@
-# webDOC
+## A PROPOS DE webDOC
 
 J'ai rassemble ici un certain nombre d'infos, tutos, astuces dans le cadre d'un apprentissage full stack front-end / back-end. En esperant que vous y trouverez autant de plaisir que moi dans mes recherches diverses.
+
+Dans la mesure ou il me sert a reunir des infos pour moi, je le mets a jour regulierement.
+
+## ENJOY PLAYING WITH THOSE WEB TOOLS
 
 <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noreferrer"> 
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
