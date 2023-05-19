@@ -1,0 +1,97 @@
+nav   a{
+	float: left;    /* effet flottant */
+	text-decoration: none; /* pas d'héritage avec effet souligné */
+	color: #ffffff; /* couleur du texte */
+	background: url(rubrique_off.png);  /* image de fond */
+	height: 36px; /* hauteur */
+	line-height: 33px;  /* interligne */
+	padding: 0 10px; /* marges intérieur */
+	font-family: sans-serif; /* police d'écriture */
+	font-size: 13px; /* taille du texte */
+	}
+	nav   a:hover{
+	background: url(rubrique_on.png); /* image de fond */
+	}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #323641;
+}
+
+h2
+{
+	text-align: center;
+	color: white;
+}
+
+.container
+{
+	display: flex;
+	flex-wrap: wrap;
+	border: solid red 5px;
+	z-index: 10;
+}
+
+.box
+{
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	font-size: 2rem;
+}
+
+/* z-index: permet de donner une hierarchie
+des box premier/arriere plan.
+Par defaut z-index: 1
+z-index doit être utilisée en conjonction avec 
+une propriété de positionnement :
+position, display, opacity, overflow. etc... 
+
+par exemple
+position: relative, 
+position: absolute, 
+position: fixed*/
+
+.absolute
+{
+	background-color: rgba(255, 215, 0, 0.5);
+	border: teal solid 5px;
+/* si j'ajoute une propriete position:absolute
+je vais pouvoir modifier ma position par rapport
+a la page. display: flex ne jouera plus.
+De plus, il va disparaitre du champ de container
+Les autres box ne tiendront plus compte de cette box
+pour aucun attribut tel que wrap, etc... */
+	position: absolute;
+    top: -10px;
+    left: 50px;
+}
+
+.fixed
+{
+	background-color: rgba(233, 150, 122, 0.5);
+	border: black solid 5px;
+	z-index: 2;
+}
+
+.relative
+{
+	/* l'attribut position:relative va permettre de deplacer
+	la box par rapport a sa position initiale
+	elle va donc rester dans container */
+	background-color: rgba(255, 255, 255, 0.5);
+	border: chocolate solid 5px;
+	position: relative;
+	top: -10px;
+	left: 50px;
+}
+
+.sticky
+{
+	background-color: rgba(50, 205, 50, 0.5);
+	border: violet solid 5px;
+}
